@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+     <link rel="stylesheet" href="styles.css">
+     <title>Playa Sol Diving</title>
+   </head>
+
+   <body>
+     <header>
+        <img src="images/logo2.gif" alt="logo" width="70px" height="35px">
+        <div id ="header">
+          <span class="bi bi-facebook" style="font-size: 35px;"></span>
+          <span class="bi bi-instagram" style="font-size: 35px;"></span>
+        </div>
+     </header>
+
+     <ul>
+	   <li><a href="index.html">Home</a></li>
+	   <li><a href="about.html">About us</a></li>
+	   <li><a class="active" href="book.html">Book now</a></li>
+	   <li><a href="contact.html">Contact</a></li>
+     </ul>
+
+     <h1 id="bookH1"> How to Book </h1>
+
+     <p id="pBook">Complete the below form to book one of our dives.<br>
+      If there are any issues preventing us from diving<br>
+      on your preferred date(weather conditions etc), we<br>
+      will be in touch.<br>
+      No deposit needed!<br>
+
+      </p>
+
+     <form name = "myForm" onsubmit = "return validate()" method="post">
+       <!-- div to make the table responsive with scroll bar -->
+       <div style="overflow-x:auto;">
+         <table id="bookTable">
+    		<tr>
+		      <td><label for="bloodPressure">Do you or anyone in your group have high blood pressure? </label></td>
+			  <td><select id="bloodPressure" required>
+				 <option disabled="disabled" selected="selected"> Select option</option>
+				 <option value="yes">Yes</option>
+				 <option value="no">No</option>
+			   </td>
+			   </select></td>
+		  	</tr>
+
+            <tr id="bookHighlight">
+	  	      <td><label for="name">Name:</label><br></td>
+	  	      <td><input type="text" id="name" name="name"  /><br></td>
+	  	    </tr>
+
+	  	    <tr>
+	  	      <td><label for="email">Email address: </label><br></td>
+	  	      <td><input type="email" id="email" /></td><br>
+	  	    </tr>
+
+	  	    <tr>
+	  	      <td> <label for="phoneNumber">Phone number: </label><br></td>
+	  	      <td><input type="number" id="phoneNumber" name="phoneNumber" /></td><br>
+	  	    </tr>
+
+	  	    <tr>
+	  	      <td> <label for="time">Please choose which date is best for you: </label> </td>
+	  	      <td> <input type="date" id="time" name="time"> </td>
+	  	    </tr>
+		  	<tr>
+		      <td><label for="diveChoice">Which dive are you interested in? </label></td>
+		  	  <td><select id="diveChoice">
+		  	  <option disabled="disabled" selected="selected"> Select option</option>
+		  	  <option value="cenote">Cenote Dive</option>
+		      <option value="shark">Dive with Bull Sharks</option>
+ 	   		  <option value="reef">Reef Dive</option></td>
+        	  </select></td>
+		  	</tr>
+
+		  	<!-- number input to get amount of dives required -->
+		  	<tr>
+		  	  <td> <label for="quantity"> How many people are coming on the dive? </label></td>
+		  	  <td> <input type="number" id="quantity" name="quantity" min=1></td><br>
+		    </tr>
+
+		  	<tr>
+		      <td><label> Total cost: </label></td>
+              <td><input type="text" id="total" /><br></td>
+	         </tr>
+
+           </table>
+
+           <div id="submitIt">
+		     <input type= "submit" value ="Submit" />
+           </div>
+         </div>
+    </form>
+
+    <div id="footer">
+      <footer>
+  	    <p>Privacy Policy.<br>
+  	    Terms & Conditions.<br>
+  	    Contact Us.
+  	    </p>
+      </footer>
+    </div>
+
+    <!--external JS link-->
+    <script src="externalJS.js"></script>
+
+  </body>
+
+</html>
