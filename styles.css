@@ -1,0 +1,289 @@
+body{
+
+background-color: #ADD8E6;
+font-family: Arial, sans-serif;
+
+}
+
+/* header */
+
+#header{
+float:right;
+}
+
+
+/*NAV BAR LIST*/
+ul {
+ 
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+   margin: 1;
+  padding: 0.25;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+  padding: 8px;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: black;
+  
+}
+
+
+
+/* Nav bar links */
+ a:link {
+   color: green;
+   background-color: transparent;
+   text-decoration: none;
+ }
+ 
+ a:visited {
+   color: white;
+   background-color: transparent;
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   color: Silver;
+   background-color: transparent;
+   text-decoration: underline;
+ }
+ 
+ a:active {
+   color: yellow;
+   background-color: transparent;
+   text-decoration: underline;
+}
+
+
+
+
+p{
+color: gray;
+font-family: Arial, sans-serif;}
+
+
+/* HOME PAGE */
+div.a{
+text-align: center;
+}
+
+
+.container{
+position: relative;
+text-align: left;
+color: white;
+}
+
+
+/* text on image on index page*/
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+div.img{
+text-align: center;
+}
+
+h2{
+color: white;
+text-shadow: 2px 2px 5px black;
+ font-size: 30px;
+}
+
+
+#h1{
+ 
+ text-shadow: 2px 2px 5px black;
+ font-size: 30px;
+ color: white;
+}
+
+table{
+color:gray;
+font-family: Arial, sans-serif;
+}
+
+
+
+.head {
+
+  max-width: 100%;
+  height: auto;
+  height: 400px;
+}
+
+.divePics{
+  
+   border: 5px solid #555;
+
+}
+
+.column {
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+  
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#padi{
+  text-align:center;
+}
+
+#pHome{
+font-size: 20px;
+}
+
+
+/* ABOUT PAGE*/
+
+.diverPics{
+border-radius: 50%;
+border: 5px solid #555;
+}
+.containerAbout{
+text-align: center;
+}
+
+/* table in about section */
+.about, td, th{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ADD8E6;
+  text-size: 15px;
+}
+#aboutH1{
+text-align: center;
+color: white;
+text-shadow: 2px 2px 5px black;
+}
+
+h3{
+color: white;
+text-shadow: 2px 2px 5px black;
+}
+
+#aboutInfo{
+font-size: 18px;
+text-align: center;
+
+}
+
+#aboutH2{
+text-align: center;
+color: white;
+text-shadow: 2px 2px 5px black;
+}
+
+
+/*BOOKING PAGE */
+
+#bookH1{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+#bookTable{
+  background-color: white;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+}
+
+#bookHighlight{
+background-color: white;
+}
+
+ input[type = submit] {
+            background-color: white;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            color: gray;
+            padding: 20px 20px;
+            margin: 10px 10px;
+            cursor: pointer;
+            
+         }
+         
+  input[type = submit]:hover{
+  background-color: gray;
+  color: white;
+  }  
+  
+  #submitIt{
+  text-align: center;
+  }
+  #pBook{
+  text-align: center;
+  font-size: 18px;
+  }
+  
+    #footer {
+              position: fixed;
+              padding: 3px;
+              bottom: 0;
+              width: 100%;
+              /* Height of the footer*/ 
+              height: 60px;
+              background: white
+              
+        }
+        
+       footer {
+          margin: 2px;
+          margin-right: 20px;
+          
+      	  text-align: right;
+      	  padding: 3px;
+      	  background-color: white;
+      	  color: gray;
+      	  font-size: 12px;
+}
+
+
+/* CONTACT PAGE */
+#contactContainer{
+text-align: center;
+font-size: 16px;
+}
+#contactTable{
+text-align: center;
+margin: 0px auto;
+margin-top: 13%;
+margin-left: auto;
+margin-right:auto;
+}
+        
+    
